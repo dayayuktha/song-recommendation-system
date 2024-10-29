@@ -11,7 +11,7 @@ st.title("🎵 Song Recommendation System by Yuktha Dayanand")
 # Load and prepare the data
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r'tcc_ceds_music.csv')
+    df = pd.read_csv('./tcc_ceds_music.csv')
     return df
 
 def prepare_features(df):
